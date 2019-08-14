@@ -1,11 +1,12 @@
 import React, { Component } from 'react';
 
+import img1 from "../assets/img/team/1.jpg"
 import img2 from "../assets/img/team/2.jpg";
 import img3 from "../assets/img/team/3.jpg";
 import TeamMember from './TeamMember';
 
 const teams = [
-  {name: 'Kay Garland', title: 'Lead Designer', image: '../assets/img/team/1.jpg'},
+  {name: 'Kay Garland', title: 'Lead Designer', image: img1},
   {name: 'Larry Parker', title: 'Lead Marketer', image: img2},
   {name: 'Diana Perterson', title: 'Lead Developer', image: img3},
 ];
@@ -23,7 +24,7 @@ class Team extends Component {
             </div>
           </div>
           <div className="row">
-            {teams.map((team, index) => <TeamMember {...teams} key={index} />)}
+            {teams.map((team, index) => <TeamMember {...team} key={index} />)}
           </div>
           <div className="row">
             <div className="col-lg-8 mx-auto text-center">
