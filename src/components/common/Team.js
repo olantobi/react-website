@@ -11,7 +11,7 @@ const teams = [
   {name: 'Diana Perterson', title: 'Lead Developer', image: img3},
 ];
 
-class Team extends Component {
+class Team extends Component { 
 
   render() {
     return(

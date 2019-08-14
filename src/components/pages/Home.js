@@ -15,11 +15,8 @@ class Home extends Component {
         link="/services" showButton={true} image={image}/>
 
         <Services />
-
         <Portfolio />
-
         <Timeline />
-
         <Team />
       </div>
     );
